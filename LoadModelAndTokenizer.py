@@ -1,6 +1,6 @@
-from transformers import AutoTokenizer, AutoModelForCausalLM, TrainingArguments, Trainer
+from transformers import AutoTokenizer, AutoModel, TrainingArguments, Trainer
 
-model_name = "DeepSeek-R1-Distill-Qwen-7B"  # e.g., "gpt2"
+model_name = "deepseekv3"  # e.g., "gpt2"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name)
 
